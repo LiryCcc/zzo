@@ -1,4 +1,4 @@
-name: Deploy ZZO site to Pages
+name: Check ZZO Code
 
 on:
   push:
