@@ -1,0 +1,37 @@
+name: Deploy ZZO site to Pages
+
+on:
+  push:
+    branches: ['*'] # 监听 main 分支的推送
+  workflow_dispatch: # 允许手动触发
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 10
+          cache: pnpm
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: lint code
+        run: pnpm lint
+
+      - name: Build with rsbuild
+        run: pnpm build
+        env:
+          LIRY_ASSET_PREFIX: '/zzo/'
