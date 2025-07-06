@@ -12,3 +12,4 @@ dist/
 
 # eslint cache
 .eslintcache
+.pnpm-store
