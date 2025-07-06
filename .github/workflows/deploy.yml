@@ -1,4 +1,4 @@
-name: Deploy Rspress site to Pages
+name: Deploy ZZO site to Pages
 
 on:
   push:
@@ -43,7 +43,7 @@ jobs:
       - name: Build with rsbuild
         run: pnpm build
         env:
-          - LIRY_ASSET_PREFIX: '/zzo/'
+          LIRY_ASSET_PREFIX: '/zzo/'
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
