@@ -9,6 +9,11 @@
 
     /* modules */
     "module": "ESNext",
+    "checkJs": true,
+    "allowJs": true,
+    "strictBuiltinIteratorReturn": true,
+    "baseUrl": ".",
+    "esModuleInterop": true,
     "verbatimModuleSyntax": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
