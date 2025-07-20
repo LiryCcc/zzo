@@ -34,6 +34,7 @@
     ]
   },
   "dependencies": {
+    "@tanstack/react-router": "^1.128.8",
     "classnames": "^2.5.1",
     "dayjs": "^1.11.13",
     "i18next": "^25.3.2",
