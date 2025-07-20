@@ -23,6 +23,10 @@
     "strictPropertyInitialization": true,
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
+    "paths": {
+      "@/*": ["src/*"],
+      "@@/*": ["./*"]
+    },
 
     /* type checking */
     "strict": true,
