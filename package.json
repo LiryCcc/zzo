@@ -11,7 +11,7 @@
     "lint:code": "eslint . --cache",
     "lint:format": "prettier . --check --cache",
     "lint:spell": "cspell .",
-    "lint:style": "stylelint src/**/*.{css,less} --fix",
+    "lint:style": "stylelint src/**/*.{css,less}",
     "lint:type": "tsc",
     "prepare": "simple-git-hooks",
     "preview": "rsbuild preview"
