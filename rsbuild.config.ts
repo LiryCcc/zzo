@@ -18,7 +18,8 @@ const rsbuildConfig = defineConfig({
     port: 29763
   },
   source: {
-    define: loadEnv({ prefixes: envPrefixList }).publicVars
+    define: loadEnv({ prefixes: envPrefixList }).publicVars,
+    include: [() => true]
   },
   output: {
     assetPrefix,
