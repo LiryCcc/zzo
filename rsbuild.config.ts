@@ -21,7 +21,8 @@ const rsbuildConfig = defineConfig({
     define: loadEnv({ prefixes: envPrefixList }).publicVars
   },
   output: {
-    assetPrefix
+    assetPrefix,
+    sourceMap: true
   }
 });
 
