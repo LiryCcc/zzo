@@ -3,6 +3,7 @@
     "EditorConfig.EditorConfig",
     "dbaeumer.vscode-eslint",
     "ms-vscode.vscode-typescript-next",
-    "esbenp.prettier-vscode"
+    "esbenp.prettier-vscode",
+    "streetsidesoftware.code-spell-checker"
   ]
 }
