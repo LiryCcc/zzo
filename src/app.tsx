@@ -1,12 +1,11 @@
-import classNames from 'classnames';
-import { StrictMode } from 'react';
-import s from './app.module.less';
+import { CommonProvider } from './components';
+import Home from './pages/home';
 
 const App = () => {
   return (
-    <StrictMode>
-      <div className={classNames(s['app-name'])}>{'Zzo app by Dawanbuchila & Liry'}</div>
-    </StrictMode>
+    <CommonProvider>
+      <Home></Home>
+    </CommonProvider>
   );
 };
 

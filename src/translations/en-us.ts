@@ -1,4 +1,4 @@
-import { defineTranslations } from '.';
+import { defineTranslations } from './define';
 
 const enUs = defineTranslations({
   welcome: 'welcome'
