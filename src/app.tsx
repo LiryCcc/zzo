@@ -1,4 +1,5 @@
 import { RouterProvider } from 'react-router';
+import './app.less';
 import { CommonProvider } from './components';
 import { router } from './router';
 
