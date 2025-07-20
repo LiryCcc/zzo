@@ -1,10 +1,11 @@
+import { RouterProvider } from 'react-router';
 import { CommonProvider } from './components';
-import Home from './pages/home';
+import { router } from './router';
 
 const App = () => {
   return (
     <CommonProvider>
-      <Home></Home>
+      <RouterProvider router={router} />
     </CommonProvider>
   );
 };
