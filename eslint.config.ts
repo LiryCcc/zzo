@@ -1,4 +1,3 @@
-import cspellPlugin from '@cspell/eslint-plugin';
 import js from '@eslint/js';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
@@ -19,17 +18,6 @@ export default tseslint.config([
     languageOptions: {
       ecmaVersion: 'latest',
       globals: globals.browser
-    }
-  },
-  {
-    plugins: { '@cspell': cspellPlugin },
-    rules: {
-      '@cspell/spellchecker': [
-        'error',
-        {
-          configFile: './cspell.config.js'
-        }
-      ]
     }
   }
 ]);
